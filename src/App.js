@@ -1,4 +1,5 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 function App() {
   const expenses = [
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       <Expenses item={expenses} />
       {/*브라우저에게 ExpenseItem이라는 컴포넌트를 쓰고싶다고 전달*/}
     </div>
